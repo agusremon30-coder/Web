@@ -1,0 +1,20 @@
+export type NovelCardData = {
+  id: number;
+  title: string;
+  slug: string;
+  synopsis?: string | null;
+  coverKey?: string | null;
+  coverUrl?: string | null;
+  coverStyle: string;
+  status: string;
+  ratingAvg: number;
+  ratingCount?: number;
+  viewCount: number;
+  bookmarkCount?: number;
+  chapterCount: number;
+  wordCount?: number;
+  authorId?: number;
+  authorName?: string | null;
+  authorPenName?: string | null;
+  genres?: { id: number; name: string; slug: string }[];
+};
